@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Soma</title>
+    <title>Calculadora</title>
 </head>
 <body>
-    <form action="/calc/sum" method="POST">
+    <form action="/calcular" method="POST">
         @csrf
-        <input name="n1">
-        <input name="n2" type="text">    
-        <input name="n3">
+        <input name="num1" type="number">
+        <input name="operador" type="text">    
+        <input name="num2" type="number">
         <button type="submit">Calcular</button>  
      </form> 
 </body>

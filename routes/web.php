@@ -20,10 +20,13 @@ Route::get('/', [HomeController::class, 'hello']);
 Route::get('/soma/{num1}/{num2}', [HomeController::class, 'soma']);
 Route::get('/sub/{num1}/{num2}', [HomeController::class, 'sub']);
 
-Route::get('/sum', [CalcController::class, 'showSoma']);
-Route::post('/calc/sum', [CalcController::class, 'calcSoma']);
+// Route::get('/sum', [CalcController::class, 'showSoma']);
+// Route::post('/calc/sum', [CalcController::class, 'calcSoma']);
 
 Route::get('/pokemon/{nome}', [HomeController::class, 'pokemon'] );
+
+Route::get('/calculadora', [CalcController::class, 'showSoma1']);
+Route::post('/calcular', [CalcController::class, 'calcSoma1']);
 
 // Route::get('/', function () {
 //     return view('welcome');

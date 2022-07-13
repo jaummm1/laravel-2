@@ -44,4 +44,18 @@ class HomeController extends Controller
         $result = $nome;
         return view('pokemon', compact('nome'));
     }
+
+    public function calculadora(Request $request, $operacao, $num1, $num2)
+    {
+            if($operacao == '+')
+               {$result = $num1 + $num2;}
+            else if($operacao == '-')
+               {$result = $num1 - $num2;}
+            else if($operacao == '*')
+               {$result = $num1*$num2;}
+            else
+              { $result = $num1/$num2;}
+
+        return view('soma', compact('result'));
+    }
 }
